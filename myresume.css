@@ -1,258 +1,174 @@
 body {
-    font-family: "Quicksand", sans-serif; 
-    line-height: 1.6;
-    color: #242038;
-    margin: 20px;
-    background-color: #fcf4ff;
+  font-family: "Quicksand", sans-serif; 
+  line-height: 1.6;
+  color: #242038;
+  margin: 20px;
+  background-color: #fcf4ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+main {
+  flex-grow: 1;
+  padding-bottom: 2rem;
+}
+
+
 h1 {
-    font-family: "Abril Fatface", serif;
-    font-size: 2.5em;
-    color: #585191;
-    text-align: center;
-    margin-bottom: 15px;
+  font-family: "Abril Fatface", serif;
+  font-size: 2.5em;
+  color: #585191;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 h2 {
-    font-family: "Abril Fatface", serif;
-    color: #585191;
-    border-bottom: 2px solid;
-    padding-bottom: 5px; 
-    margin-top: 30px;
-    margin-bottom: 15px;
+  font-family: "Abril Fatface", serif;
+  color: #585191;
+  border-bottom: 2px solid;
+  padding-bottom: 5px; 
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 h3 {
-   font-family: "Quicksand", sans-serif;
-    font-size: 1.4em;
-    color: #463b15;
-    margin-bottom: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4em;
+  color: #463b15;
+  margin-bottom: 5px;
 }
 
 p {
-    line-height: 1.6;
-    color: #463b15;
-    margin: 20px;
+  line-height: 1.6;
+  color: #463b15;
+  margin: 20px;
 }
-
+  
 ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 10px;
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 li {
-    margin-bottom: 5px;
-}
-
-.contact-info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.contact-info a {
-    color: #4F359B;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Sections (Experience, Education, Skills, etc.) */
-.section {
-    margin-bottom: 25px;
-}
-
-.job-title, .degree-title {
-    font-weight: bold;
-    color: #343220;
-}
-
-.company-name, .school-name {
-    font-style: italic;
-    color: #343220;
-}
-
-.dates {
-    float: right;
-    color: #343220;
-}
-
-/* Skills Section */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    color: #2b2815
-}
-
-.skill-item {
-    background-color: #EFF7FF;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9em;
-}
-
-/* Responsive Design (Example) */
-@media (max-width: 768px) {
-    .resume-container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .contact-info p {
-        display: block;
-        margin: 5px 0;
-    }
-}
-blockquote {
-    background-color: #B5BA72; 
-    float: left;
-    border-left: 5px solid #333;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    margin: 25px;  
-    font-style: italic; 
-    color: #463b15;  
-    margin-bottom: 100px;
-}
-
-footer {
-    text-align: center; 
-    display: inline-table;
-    font-family: "Quicksand", sans-serif; 
-    background-color: #B5BA72;
-  position: fixed;
-    width: 100%;
-    height: 20px;
-    bottom: 0;
-    left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 30px;
-    flex-grow: 1;
-    
-}
+  margin-bottom: 5px;
+} 
 nav {
-    text-align: center;
-    font-family: "Abril Fatface", serif;
-    color: #4F359B; 
-    }
-.button { 
-    background-color: #4F359B; 
-    color: #ffffff;
-    font-family: "Abril Fatface", serif;
-    padding: 10px 20px; 
-    margin: 20px 10px;
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 20px; 
-    cursor: pointer; 
-}
-.button:hover {
-    color: #4f359B;
-    background-color: #ffffff;
-    border: 1px solid #4F359B;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  margin-bottom: 20px;
 }
 
-     
 .menu {
-    color: #2b2815;
-    font-family: "Abril Fatface", serif; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #463b15;
+  font-weight: bold;
+  font-family: "Abril Fatface", serif;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.menu li a:hover {
+  color: #4F359B;
+} 
+
+.button,
+.submit-btn {
+  background-color: #4F359B; 
+  color: #ffffff;
+  font-family: "Abril Fatface", serif;
+  padding: 10px 20px; 
+  margin: 20px 10px;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 20px; 
+  cursor: pointer; 
+  border-radius: 10px;
+  border: none;
+}
+.button:hover,
+.submit-btn:hover {
+  color: #4F359B;
+  background-color: #ffffff;
+  border: 1px solid #4F359B;
 }
 
-#nav ul.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    gap: 15px;         
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 20px;
 }
-#nav ul.menu li a {
-    text-decoration: none;   
-    color: #463b15;      
-    font-weight: bold;   
-    font-family: "Abril Fatface", serif; 
-    font-size: 20px;
-    transition: color 0.3s ease;
+#rightdiv,
+#leftdiv,
+#rightdiv2,
+#leftdiv2 {
+  flex: 1;
+  min-width: 300px;
 }
 
-#nav ul.menu li a:hover {
-    color: #4F359B; 
+#rightdiv2 {
+  flex: 0 1 60%;
 }
+
+#leftdiv2 {
+  flex: 0 1 40%;
+}
+ 
+blockquote {
+  background-color: #4F359B; 
+  border-left: 5px solid #333;
+  padding: 15px;
+  margin: 25px;
+  font-style: italic; 
+  color: #fcf4ff;  
+  border-radius: 6px;
+}
+ 
 .intro {
   display: flex;
   align-items: flex-start; 
   gap: 20px;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.introtext{
-    flex: 1;
+.introtext {
+  flex: 1;
 }
 
 #headshotpic img {
   width: 150px;
   border-radius: 8px;
-    float: left;
-    order: 2;
+  order: 2;
 }
-
-#decorative img {
-    width: 100%;
-    float: right;
-    order: 1;
-    padding-bottom: 30px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  
-}
-body {
-  display: table;
+ 
+footer {
+  text-align: center;  
+  font-family: "Quicksand", sans-serif; 
   width: 100%; 
+  padding: 10px 0;
+  margin-top: auto;    
+  background-color: #f1eafc;
+  color: #463b15;
 }
 
-body > footer {
-   display: table-row;
-} 
-#container {
-    position: relative
+.linkedin {
+  color: #242038;
+  text-decoration: none;
 }
-#rightdiv {
-  position: absolute;
-right: 0;
-    width: 70%;
+
+.linkedin:hover {
+  text-decoration: underline;
 }
-#leftdiv {
-  position: absolute;
-    left: 0;
-    width: 30%;
-}
-#rightdiv2 {
-  position: absolute;
-right: 0;
-    width: 60%;
-}
-#leftdiv2 {
-  position: absolute;
-    left: 0;
-    width: 40%;
-}
+  
