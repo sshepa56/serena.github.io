@@ -235,7 +235,6 @@ footer {
   margin: 0;
 }
 
-/* Stack nicely on smaller screens */
 @media (max-width: 768px) {
   #container {
     flex-direction: column;
